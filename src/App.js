@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FormGenerator from "./components/landingPage/FormGenerator";
+import FormJsonPreview from "./components/landingPage/FormJsonPreview";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="form-generator-title">
+        <h1>Dynamic Form Generator</h1>
+      </div>
+      <div className="form-generator-container">
+        <div className="generate-form-container">
+          <FormGenerator />
+        </div>
+        <div className="preview-form-json-container">
+          <FormJsonPreview />
+        </div>
+      </div>
     </div>
   );
 }

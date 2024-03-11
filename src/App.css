@@ -1,38 +1,183 @@
-.App {
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.form-generator-title,
+.form-preview-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-generator-container {
+  width: 60%;
+  min-height: 98dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.generate-form-container {
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+.preview-form-json-container {
+  overflow-x: scroll;
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+
+.form-generator {
+  display: flex;
+  flex-direction: column;
+}
+.form-generator-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-input-btns-container {
+  padding: 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-btn {
+  cursor: pointer;
+  width: 150px;
+  padding: 5px 5px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.field-action-btns-container {
+  display: flex;
+  gap: 5px;
+  padding: 5px 5px;
+  border-top: 1px solid gray;
+}
+
+.field-action-btn {
+  cursor: pointer;
+  padding: 5px 5px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.text-field-container,
+.textarea-field-container,
+.radioGroup-field-container,
+.select-field-container,
+.checkboxGroup-field-container,
+.button-field-container,
+.fileUpload-field-container {
+  margin: 10px 0px;
+  padding: 2px 2px;
+  background-color: #fff1eb;
+  border: 1px solid gray;
+}
+
+.text-field,
+.textarea-field,
+.radioGroup-field,
+.select-field,
+.checkboxGroup-field,
+.fileUpload-field {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+}
+
+.button-field {
+  width: 150px;
+  padding: 5px 5px;
+}
+
+.radioGroup-field-input-container,
+.checkboxGroup-field-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-field-input,
+.textarea-field-input,
+.radioGroup-field-input,
+.radioGroup-field-input-label,
+.checkboxGroup-field-input,
+.checkboxGroup-field-input-label {
+  padding: 2px 2px;
+}
+
+.text-field-editor-div,
+.textarea-field-editor-div,
+.radioGroup-field-editor-div,
+.select-field-editor-div,
+.checkboxGroup-field-editor-div,
+.button-field-editor-div,
+.fileUpload-field-editor-div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+  border: 1px solid gray;
+  background-color: azure;
+}
+.text-field-attr-div,
+.textarea-field-attr-div,
+.radioGroup-field-attr-div,
+.select-field-attr-div,
+.checkboxGroup-field-attr-div,
+.button-field-attr-div,
+.fileUpload-field-attr-div {
+  margin-top: 2px;
+  padding: 2px 2px;
+}
+.text-field-attr-input,
+.textarea-field-attr-input,
+.radioGroup-field-attr-input,
+.select-field-attr-input,
+.checkboxGroup-field-attr-input,
+.button-field-attr-input,
+.fileUpload-field-attr-input {
+  padding: 2px 2px;
+}
+
+.radioGroup-field-attr-input,
+.select-field-attr-input,
+.checkboxGroup-field-attr-input,
+.fileUpload-field-attr-input {
+  margin: 0 4px;
+}
+
+.edit-field-action-btns-container {
+  display: flex;
+  gap: 5px;
+  padding: 5px 5px;
+  border-top: 1px solid gray;
+}
+
+.edit-field-action-btn,
+.button-field-btn,
+.fileUpload-field-btn {
+  cursor: pointer;
+  padding: 5px 5px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.button-field-btn,
+.fileUpload-field-btn {
+  background-color: powderblue;
+}
+
+@media (max-width: 800px) {
+  .form-generator-container {
+    width: 100%;
   }
 }
